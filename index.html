@@ -11,25 +11,136 @@
     window.navigator.webkitGetUserMedia();
     navigator.mediaDevices.getUserMedia();
   </script>
+
   <body>
     <a-scene
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
     >
+      <!-- Models -->
       <a-assets>
-        <a-asset-item id="car" src="assets/car.glb"></a-asset-item>
+        <a-asset-item id="1" src="assets/glb/1.glb"></a-asset-item>
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="2" src="assets/glb/2.glb"></a-asset-item>
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="3" src="assets/glb/3.glb"></a-asset-item>
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="4" src="assets/glb/4.glb"></a-asset-item>
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="5" src="assets/glb/5.glb"></a-asset-item>
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="6" src="assets/glb/6.glb"></a-asset-item>
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="7" src="assets/glb/7.glb"></a-asset-item>
       </a-assets>
 
-      <a-marker preset="custom" type="pattern" url="assets/mac.patt">
+      <!-- Markers -->
+      <a-marker
+        preset="custom"
+        type="pattern"
+        url="assets/patterns/pattern-q1.patt"
+      >
         <a-entity
           id="model"
-          gltf-model="#car"
+          gltf-model="#1"
           position="0 0 0"
           scale="0.2 0.2 0.2"
           rotation="0 0 0"
         >
         </a-entity>
       </a-marker>
+      <a-marker
+        preset="custom"
+        type="pattern"
+        url="assets/patterns/pattern-q2.patt"
+      >
+        <a-entity
+          id="model"
+          gltf-model="#2"
+          position="0 0 0"
+          scale="0.2 0.2 0.2"
+          rotation="0 0 0"
+        >
+        </a-entity>
+      </a-marker>
+      <a-marker
+        preset="custom"
+        type="pattern"
+        url="assets/patterns/pattern-q3.patt"
+      >
+        <a-entity
+          id="model"
+          gltf-model="#3"
+          position="0 0 0"
+          scale="0.2 0.2 0.2"
+          rotation="0 0 0"
+        >
+        </a-entity>
+      </a-marker>
+      <a-marker
+        preset="custom"
+        type="pattern"
+        url="assets/patterns/pattern-q4.patt"
+      >
+        <a-entity
+          id="model"
+          gltf-model="#4"
+          position="0 0 0"
+          scale="0.2 0.2 0.2"
+          rotation="0 0 0"
+        >
+        </a-entity>
+      </a-marker>
+      <a-marker
+        preset="custom"
+        type="pattern"
+        url="assets/patterns/pattern-q5.patt"
+      >
+        <a-entity
+          id="model"
+          gltf-model="#5"
+          position="0 0 0"
+          scale="0.2 0.2 0.2"
+          rotation="0 0 0"
+        >
+        </a-entity>
+      </a-marker>
+      <a-marker
+        preset="custom"
+        type="pattern"
+        url="assets/patterns/pattern-q6.patt"
+      >
+        <a-entity
+          id="model"
+          gltf-model="#6"
+          position="0 0 0"
+          scale="0.2 0.2 0.2"
+          rotation="0 0 0"
+        >
+        </a-entity>
+      </a-marker>
+      <a-marker
+        preset="custom"
+        type="pattern"
+        url="assets/patterns/pattern-q7.patt"
+      >
+        <a-entity
+          id="model"
+          gltf-model="#7"
+          position="0 0 0"
+          scale="0.2 0.2 0.2"
+          rotation="0 0 0"
+        >
+        </a-entity>
+      </a-marker>
+
+      <!-- Camera scanner -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
